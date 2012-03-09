@@ -2,7 +2,7 @@
 
 if [ ! -e talk/third_party/expat-2.0.1 ]; then
 	if [ ! -e expat-2.0.1.tar.gz ]; then
-		echo "Downloading expact..."
+		echo "Downloading expat..."
                 wget http://sourceforge.net/projects/expat/files/expat/2.0.1/expat-2.0.1.tar.gz/download -O expat-2.0.1.tar.gz
 	fi
 	echo -n "Extracting expact 2.0.1..."
