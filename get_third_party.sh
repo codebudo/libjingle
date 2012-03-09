@@ -31,3 +31,13 @@ if [ ! -e talk/third_party/gtest ]; then
   echo "done"
   cd ../../
 fi
+
+if [ ! -e talk/third_party/jsoncpp-src-0.5.0 ]; then
+	if [ ! -e jsoncpp-src-0.5.0.tar.gz ]; then
+		echo "Downloading jsoncpp..."
+                wget http://sourceforge.net/projects/jsoncpp/files/latest/download -O jsoncpp-src-0.5.0.tar.gz
+	fi
+	echo -n "Extracting jsoncpp 0.5.0..."
+	tar zxpf jsoncpp-src-0.5.0.tar.gz -C talk/third_party
+	echo "done"
+fi
