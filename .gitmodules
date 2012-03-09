@@ -1,0 +1,6 @@
+[submodule "vendor/jsoncpp"]
+	path = vendor/jsoncpp
+	url = git@github.com:codebudo/jsoncpp.git
+[submodule "vendor/libexpat"]
+	path = vendor/libexpat
+	url = git@github.com:codebudo/libexpat.git
