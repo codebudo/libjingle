@@ -33,7 +33,7 @@
 #ifdef ANDROID
 #include <gtest/gtest.h>
 #elif LIBJINGLE_UNITTEST
-#include "third_party/gtest/include/gtest/gtest.h"
+#include "gtest/gtest.h"
 #else
 #include "testing/base/public/gunit.h"
 #endif

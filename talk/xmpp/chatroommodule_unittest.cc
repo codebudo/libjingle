@@ -28,14 +28,15 @@
 #include <string>
 #include <sstream>
 #include <iostream>
-#include "common/common.h"
-#include "buzz/xmppengine.h"
-#include "buzz/xmlelement.h"
-#include "buzz/chatroommodule.h"
-#include "buzz/constants.h"
-#include "engine/util_unittest.h"
-#include "test/unittest.h"
-#include "test/unittest-inl.h"
+#include "talk/base/common.h"
+#include "talk/base/scoped_ptr.h"
+#include "talk/xmpp/xmppengine.h"
+#include "talk/xmllite/xmlelement.h"
+#include "talk/xmpp/chatroommodule.h"
+#include "talk/xmpp/constants.h"
+#include "talk/xmpp/util_unittest.h"
+//#include "test/unittest.h"
+//#include "test/unittest-inl.h"
 
 #define TEST_OK(x) TEST_EQ((x),XMPP_RETURN_OK)
 #define TEST_BADARGUMENT(x) TEST_EQ((x),XMPP_RETURN_BADARGUMENT)

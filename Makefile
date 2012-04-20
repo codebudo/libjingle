@@ -1,0 +1,28 @@
+CMAKE_BUILD_DIR ?= work
+SOURCE_DIR ?= $(shell pwd)
+CMAKE_PLATFORM_DEFINES :=
+VENDOR_INSTALL_PREFIX := $(SOURCE_DIR)/vendor/$(CMAKE_BUILD_DIR)
+
+CMAKE_PLATFORM_DEFINES += -D CMAKE_INSTALL_PREFIX=$(VENDOR_INSTALL_PREFIX)
+CMAKE_PLATFORM_DEFINES += -D VENDOR_INSTALL_PREFIX=$(VENDOR_INSTALL_PREFIX)
+
+.PHONY: all
+all: setup build
+	echo vendor $(VENDOR_INSTALL_PREFIX)
+	$(MAKE) -C $(CMAKE_BUILD_DIR)
+
+.PHONY: clean
+	$(MAKE) -C $(CMAKE_BUILD_DIR) clean
+
+.PHONY: mrproper
+mrproper: 
+	rm -rf $(CMAKE_BUILD_DIR)
+
+configure:
+	mkdir -p $(CMAKE_BUILD_DIR)
+
+build: configure
+	cd $(CMAKE_BUILD_DIR) && cmake $(CMAKE_PLATFORM_DEFINES) $(SOURCE_DIR)
+
+setup:
+	$(MAKE) -C vendor
