@@ -1090,7 +1090,7 @@ endif ()
 # example: call
 #------------------------------------------------------------------------------
 #if (WIN32 OR (APPLE AND NOT IOS) )
-if (WIN32 AND (APPLE AND NOT IOS) )
+if (WIN32 OR (APPLE AND NOT IOS) )
 message (STATUS "Adding Example: call")
 
 set( CMAKE_VERBOSE_MAKEFILE on )
