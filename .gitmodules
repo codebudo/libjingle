@@ -6,7 +6,7 @@
 	url = git@github.com:codebudo/libexpat.git
 [submodule "vendor/googletest"]
 	path = vendor/googletest
-	url = https://github.com/codebudo/googletest.git
+	url = git@github.com:codebudo/googletest.git
 [submodule "vendor/srtp"]
 	path = vendor/srtp
 	url = git@github.com:codebudo/srtp.git
