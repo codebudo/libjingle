@@ -42,4 +42,4 @@ build: configure
 	cd $(CMAKE_BUILD_DIR) && cmake $(CMAKE_PLATFORM_DEFINES) $(SOURCE_DIR)
 
 setup:
-	$(MAKE) -C vendor
+	$(MAKE) -C vendor install

@@ -22,7 +22,7 @@ mrproper: $(PACKAGES_MRPROPER)
 	rm -rf work
 
 configure:
-	cd srtp; ./configure --prefix=$(VENDOR_INSTALL_PREFIX)
+	cd srtp; ./configure --prefix=$(VENDOR_INSTALL_PREFIX) CFLAGS="-m32"
 
 .PHONY: $(THIRD_PARTY_LIBS)
 $(THIRD_PARTY_LIBS): 

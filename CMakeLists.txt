@@ -93,7 +93,7 @@ set (BASE_SOURCES
     talk/base/firewallsocketserver.h
     talk/base/flags.cc
     talk/base/flags.h
-    talk/base/gunit.h
+    #talk/base/gunit.h
     talk/base/helpers.cc
     talk/base/helpers.h
     #talk/base/helpers_unittest.cc
@@ -389,7 +389,7 @@ set (CALL_EXAMPLE_SOURCES
     #talk/examples/call/call_unittest.cc
     talk/examples/call/callclient.cc
     talk/examples/call/callclient.h
-    talk/examples/call/callclient_unittest.cc
+    #talk/examples/call/callclient_unittest.cc
     talk/examples/call/console.cc
     talk/examples/call/console.h
     talk/examples/call/discoitemsquerytask.cc
@@ -439,7 +439,7 @@ set (PLUS_EXAMPLE_SOURCES
     talk/examples/plus/rostertask.h
     talk/examples/plus/testutil/libjingleplus_main.cc
     talk/examples/plus/testutil/libjingleplus_test_notifier.h
-    talk/examples/plus/testutil/libjingleplus_unittest.cc
+    #talk/examples/plus/testutil/libjingleplus_unittest.cc
 )
 set (PEERCONNECTION_EXAMPLE_SOURCES
     talk/examples/peerconnection/client/conductor.cc
@@ -473,12 +473,12 @@ set (P2P_SOURCES
     talk/p2p/base/p2ptransport.h
     talk/p2p/base/p2ptransportchannel.cc
     talk/p2p/base/p2ptransportchannel.h
-    talk/p2p/base/p2ptransportchannel_unittest.cc
+    #talk/p2p/base/p2ptransportchannel_unittest.cc
     talk/p2p/base/parsing.cc
     talk/p2p/base/parsing.h
     talk/p2p/base/port.cc
     talk/p2p/base/port.h
-    talk/p2p/base/port_unittest.cc
+    #talk/p2p/base/port_unittest.cc
     talk/p2p/base/portallocator.cc
     talk/p2p/base/portallocator.h
     talk/p2p/base/portallocatorsessionproxy.cc
@@ -487,21 +487,21 @@ set (P2P_SOURCES
     talk/p2p/base/portproxy.h
     talk/p2p/base/pseudotcp.cc
     talk/p2p/base/pseudotcp.h
-    talk/p2p/base/pseudotcp_unittest.cc
+    #talk/p2p/base/pseudotcp_unittest.cc
     talk/p2p/base/rawtransport.cc
     talk/p2p/base/rawtransport.h
     talk/p2p/base/rawtransportchannel.cc
     talk/p2p/base/rawtransportchannel.h
     talk/p2p/base/relayport.cc
     talk/p2p/base/relayport.h
-    talk/p2p/base/relayport_unittest.cc
+    #talk/p2p/base/relayport_unittest.cc
     talk/p2p/base/relayserver.cc
     talk/p2p/base/relayserver.h
     talk/p2p/base/relayserver_main.cc
-    talk/p2p/base/relayserver_unittest.cc
+    #talk/p2p/base/relayserver_unittest.cc
     talk/p2p/base/session.cc
     talk/p2p/base/session.h
-    talk/p2p/base/session_unittest.cc
+    #talk/p2p/base/session_unittest.cc
     talk/p2p/base/sessionclient.h
     talk/p2p/base/sessiondescription.cc
     talk/p2p/base/sessiondescription.h
@@ -512,24 +512,24 @@ set (P2P_SOURCES
     talk/p2p/base/sessionmessages.h
     talk/p2p/base/stun.cc
     talk/p2p/base/stun.h
-    talk/p2p/base/stun_unittest.cc
+    #talk/p2p/base/stun_unittest.cc
     talk/p2p/base/stunport.cc
     talk/p2p/base/stunport.h
-    talk/p2p/base/stunport_unittest.cc
+    #talk/p2p/base/stunport_unittest.cc
     talk/p2p/base/stunrequest.cc
     talk/p2p/base/stunrequest.h
-    talk/p2p/base/stunrequest_unittest.cc
+    #talk/p2p/base/stunrequest_unittest.cc
     talk/p2p/base/stunserver.cc
     talk/p2p/base/stunserver.h
     talk/p2p/base/stunserver_main.cc
-    talk/p2p/base/stunserver_unittest.cc
+    #talk/p2p/base/stunserver_unittest.cc
     talk/p2p/base/tcpport.cc
     talk/p2p/base/tcpport.h
     talk/p2p/base/testrelayserver.h
     talk/p2p/base/teststunserver.h
     talk/p2p/base/transport.cc
     talk/p2p/base/transport.h
-    talk/p2p/base/transport_unittest.cc
+    #talk/p2p/base/transport_unittest.cc
     talk/p2p/base/transportchannel.cc
     talk/p2p/base/transportchannel.h
     talk/p2p/base/transportchannelimpl.h
@@ -541,10 +541,10 @@ set (P2P_SOURCES
     talk/p2p/client/basicportallocator.h
     talk/p2p/client/connectivitychecker.cc
     talk/p2p/client/connectivitychecker.h
-    talk/p2p/client/connectivitychecker_unittest.cc
+    #talk/p2p/client/connectivitychecker_unittest.cc
     talk/p2p/client/httpportallocator.cc
     talk/p2p/client/httpportallocator.h
-    talk/p2p/client/portallocator_unittest.cc
+    #talk/p2p/client/portallocator_unittest.cc
     talk/p2p/client/sessionmanagertask.h
     talk/p2p/client/sessionsendtask.h
     talk/p2p/client/socketmonitor.cc
@@ -558,24 +558,24 @@ set (P2P_SOURCES
     talk/session/phone/carbonvideorenderer.h
     talk/session/phone/channel.cc
     talk/session/phone/channel.h
-    talk/session/phone/channel_unittest.cc
+    #talk/session/phone/channel_unittest.cc
     talk/session/phone/channelmanager.cc
     talk/session/phone/channelmanager.h
-    talk/session/phone/channelmanager_unittest.cc
+    #talk/session/phone/channelmanager_unittest.cc
     talk/session/phone/codec.cc
     talk/session/phone/codec.h
-    talk/session/phone/codec_unittest.cc
+    #talk/session/phone/codec_unittest.cc
     talk/session/phone/cryptoparams.h
     talk/session/phone/currentspeakermonitor.cc
     talk/session/phone/currentspeakermonitor.h
-    talk/session/phone/currentspeakermonitor_unittest.cc
+    #talk/session/phone/currentspeakermonitor_unittest.cc
     talk/session/phone/devicemanager.cc
     talk/session/phone/devicemanager.h
     #talk/session/phone/devicemanager_mac.mm
     #talk/session/phone/devicemanager_unittest.cc
     talk/session/phone/dummydevicemanager.cc
     talk/session/phone/dummydevicemanager.h
-    talk/session/phone/dummydevicemanager_unittest.cc
+    #talk/session/phone/dummydevicemanager_unittest.cc
     talk/session/phone/fakedevicemanager.h
     talk/session/phone/fakemediaengine.h
     talk/session/phone/fakemediaprocessor.h
@@ -585,10 +585,10 @@ set (P2P_SOURCES
     talk/session/phone/fakevideorenderer.h
     talk/session/phone/filemediaengine.cc
     talk/session/phone/filemediaengine.h
-    talk/session/phone/filemediaengine_unittest.cc
+    #talk/session/phone/filemediaengine_unittest.cc
     talk/session/phone/filevideocapturer.cc
     talk/session/phone/filevideocapturer.h
-    talk/session/phone/filevideocapturer_unittest.cc
+    #talk/session/phone/filevideocapturer_unittest.cc
     talk/session/phone/macdevicemanager.cc
     talk/session/phone/macdevicemanager.h
     talk/session/phone/macdevicemanagermm.mm
@@ -598,30 +598,30 @@ set (P2P_SOURCES
     talk/session/phone/mediaengine.h
     talk/session/phone/mediamessages.cc
     talk/session/phone/mediamessages.h
-    talk/session/phone/mediamessages_unittest.cc
+    #talk/session/phone/mediamessages_unittest.cc
     talk/session/phone/mediamonitor.cc
     talk/session/phone/mediamonitor.h
     talk/session/phone/mediaprocessorinterface.h
     talk/session/phone/mediarecorder.cc
     talk/session/phone/mediarecorder.h
-    talk/session/phone/mediarecorder_unittest.cc
+    #talk/session/phone/mediarecorder_unittest.cc
     talk/session/phone/mediasession.cc
     talk/session/phone/mediasession.h
-    talk/session/phone/mediasession_unittest.cc
+    #talk/session/phone/mediasession_unittest.cc
     talk/session/phone/mediasessionclient.cc
     talk/session/phone/mediasessionclient.h
-    talk/session/phone/mediasessionclient_unittest.cc
+    #talk/session/phone/mediasessionclient_unittest.cc
     talk/session/phone/mediasink.h
     talk/session/phone/nullvideorenderer.h
     talk/session/phone/rtcpmuxfilter.cc
     talk/session/phone/rtcpmuxfilter.h
-    talk/session/phone/rtcpmuxfilter_unittest.cc
+    #talk/session/phone/rtcpmuxfilter_unittest.cc
     talk/session/phone/rtpdump.cc
     talk/session/phone/rtpdump.h
-    talk/session/phone/rtpdump_unittest.cc
+    #talk/session/phone/rtpdump_unittest.cc
     talk/session/phone/rtputils.cc
     talk/session/phone/rtputils.h
-    talk/session/phone/rtputils_unittest.cc
+    #talk/session/phone/rtputils_unittest.cc
     talk/session/phone/screencastid.h
     talk/session/phone/soundclip.cc
     talk/session/phone/soundclip.h
@@ -630,7 +630,7 @@ set (P2P_SOURCES
     #talk/session/phone/srtpfilter_unittest.cc
     talk/session/phone/ssrcmuxfilter.cc
     talk/session/phone/ssrcmuxfilter.h
-    talk/session/phone/ssrcmuxfilter_unittest.cc
+    #talk/session/phone/ssrcmuxfilter_unittest.cc
     talk/session/phone/streamparams.cc
     talk/session/phone/streamparams.h
     talk/session/phone/testdata/captured-320x240-2s-48.frames
@@ -643,10 +643,10 @@ set (P2P_SOURCES
     talk/session/phone/videoadapter.h
     talk/session/phone/videocapturer.cc
     talk/session/phone/videocapturer.h
-    talk/session/phone/videocapturer_unittest.cc
+    #talk/session/phone/videocapturer_unittest.cc
     talk/session/phone/videocommon.cc
     talk/session/phone/videocommon.h
-    talk/session/phone/videocommon_unittest.cc
+    #talk/session/phone/videocommon_unittest.cc
     talk/session/phone/videoframe.cc
     talk/session/phone/videoframe.h
     talk/session/phone/videoprocessor.h
@@ -668,7 +668,7 @@ set (LINUX_SOUND_SOURCES
     talk/sound/alsasymboltable.cc
     talk/sound/alsasymboltable.h
     talk/sound/automaticallychosensoundsystem.h
-    talk/sound/automaticallychosensoundsystem_unittest.cc
+    #talk/sound/automaticallychosensoundsystem_unittest.cc
     talk/sound/linuxsoundsystem.cc
     talk/sound/linuxsoundsystem.h
     talk/sound/nullsoundsystem.cc
@@ -696,24 +696,24 @@ set (LINUX_SOUND_SOURCES
 set (XMLLITE_SOURCES
     talk/xmllite/qname.cc
     talk/xmllite/qname.h
-    talk/xmllite/qname_unittest.cc
+    #talk/xmllite/qname_unittest.cc
     talk/xmllite/xmlbuilder.cc
     talk/xmllite/xmlbuilder.h
-    talk/xmllite/xmlbuilder_unittest.cc
+    #talk/xmllite/xmlbuilder_unittest.cc
     talk/xmllite/xmlconstants.cc
     talk/xmllite/xmlconstants.h
     talk/xmllite/xmlelement.cc
     talk/xmllite/xmlelement.h
-    talk/xmllite/xmlelement_unittest.cc
+    #talk/xmllite/xmlelement_unittest.cc
     talk/xmllite/xmlnsstack.cc
     talk/xmllite/xmlnsstack.h
-    talk/xmllite/xmlnsstack_unittest.cc
+    #talk/xmllite/xmlnsstack_unittest.cc
     talk/xmllite/xmlparser.cc
     talk/xmllite/xmlparser.h
-    talk/xmllite/xmlparser_unittest.cc
+    #talk/xmllite/xmlparser_unittest.cc
     talk/xmllite/xmlprinter.cc
     talk/xmllite/xmlprinter.h
-    talk/xmllite/xmlprinter_unittest.cc
+    #talk/xmllite/xmlprinter_unittest.cc
 )
 set (XMPP_SOURCES
     talk/xmpp/asyncsocket.h
@@ -725,33 +725,33 @@ set (XMPP_SOURCES
     talk/xmpp/fakexmppclient.h
     talk/xmpp/hangoutpubsubclient.cc
     talk/xmpp/hangoutpubsubclient.h
-    talk/xmpp/hangoutpubsubclient_unittest.cc
+    #talk/xmpp/hangoutpubsubclient_unittest.cc
     talk/xmpp/iqtask.cc
     talk/xmpp/iqtask.h
     talk/xmpp/jid.cc
     talk/xmpp/jid.h
-    talk/xmpp/jid_unittest.cc
+    #talk/xmpp/jid_unittest.cc
     talk/xmpp/module.h
     talk/xmpp/moduleimpl.cc
     talk/xmpp/moduleimpl.h
     talk/xmpp/mucroomconfigtask.cc
     talk/xmpp/mucroomconfigtask.h
-    talk/xmpp/mucroomconfigtask_unittest.cc
+    #talk/xmpp/mucroomconfigtask_unittest.cc
     talk/xmpp/mucroomhistorytask.cc
     talk/xmpp/mucroomhistorytask.h
     talk/xmpp/mucroomlookuptask.cc
     talk/xmpp/mucroomlookuptask.h
-    talk/xmpp/mucroomlookuptask_unittest.cc
+    #talk/xmpp/mucroomlookuptask_unittest.cc
     talk/xmpp/plainsaslhandler.h
     talk/xmpp/prexmppauth.h
     talk/xmpp/pubsub_task.cc
     talk/xmpp/pubsub_task.h
     talk/xmpp/pubsubclient.cc
     talk/xmpp/pubsubclient.h
-    talk/xmpp/pubsubclient_unittest.cc
+    #talk/xmpp/pubsubclient_unittest.cc
     talk/xmpp/pubsubtasks.cc
     talk/xmpp/pubsubtasks.h
-    talk/xmpp/pubsubtasks_unittest.cc
+    #talk/xmpp/pubsubtasks_unittest.cc
     talk/xmpp/ratelimitmanager.cc
     talk/xmpp/ratelimitmanager.h
     talk/xmpp/receivetask.cc
@@ -764,13 +764,13 @@ set (XMPP_SOURCES
     talk/xmpp/saslmechanism.cc
     talk/xmpp/saslmechanism.h
     talk/xmpp/saslplainmechanism.h
-    talk/xmpp/util_unittest.cc
-    talk/xmpp/util_unittest.h
+    #talk/xmpp/util_unittest.cc
+    #talk/xmpp/util_unittest.h
     talk/xmpp/xmppclient.cc
     talk/xmpp/xmppclient.h
     talk/xmpp/xmppclientsettings.h
     talk/xmpp/xmppengine.h
-    talk/xmpp/xmppengine_unittest.cc
+    #talk/xmpp/xmppengine_unittest.cc
     talk/xmpp/xmppengineimpl.cc
     talk/xmpp/xmppengineimpl.h
     talk/xmpp/xmppengineimpl_iq.cc
@@ -796,31 +796,31 @@ set (WEBRTC_SOURCES_
     talk/session/phone/webrtcmediaengine.h
     talk/session/phone/webrtcpassthroughrender.cc
     talk/session/phone/webrtcpassthroughrender.h
-    talk/session/phone/webrtcpassthroughrender_unittest.cc
+    #talk/session/phone/webrtcpassthroughrender_unittest.cc
     talk/session/phone/webrtcvideocapturer.cc
     talk/session/phone/webrtcvideocapturer.h
-    talk/session/phone/webrtcvideocapturer_unittest.cc
+    #talk/session/phone/webrtcvideocapturer_unittest.cc
     talk/session/phone/webrtcvideoengine.cc
     talk/session/phone/webrtcvideoengine.h
-    talk/session/phone/webrtcvideoengine_unittest.cc
+    #talk/session/phone/webrtcvideoengine_unittest.cc
     talk/session/phone/webrtcvideoframe.cc
     talk/session/phone/webrtcvideoframe.h
-    talk/session/phone/webrtcvideoframe_unittest.cc
+    #talk/session/phone/webrtcvideoframe_unittest.cc
     talk/session/phone/webrtcvie.h
     talk/session/phone/webrtcvoe.h
     talk/session/phone/webrtcvoiceengine.cc
     talk/session/phone/webrtcvoiceengine.h
-    talk/session/phone/webrtcvoiceengine_unittest.cc
+    #talk/session/phone/webrtcvoiceengine_unittest.cc
 )
 set (WEBRTC_SOURCES
     talk/app/webrtc/audiotrackimpl.cc
     talk/app/webrtc/audiotrackimpl.h
     talk/app/webrtc/fakeportallocatorfactory.h
     talk/app/webrtc/mediastream.h
-    talk/app/webrtc/mediastream_unittest.cc
+    #talk/app/webrtc/mediastream_unittest.cc
     talk/app/webrtc/mediastreamhandler.cc
     talk/app/webrtc/mediastreamhandler.h
-    talk/app/webrtc/mediastreamhandler_unittest.cc
+    #talk/app/webrtc/mediastreamhandler_unittest.cc
     talk/app/webrtc/mediastreamimpl.cc
     talk/app/webrtc/mediastreamimpl.h
     talk/app/webrtc/mediastreamprovider.h
@@ -831,25 +831,25 @@ set (WEBRTC_SOURCES
     talk/app/webrtc/mediatrackimpl.h
     talk/app/webrtc/notifierimpl.h
     talk/app/webrtc/peerconnection.h
-    talk/app/webrtc/peerconnection_unittest.cc
-    talk/app/webrtc/peerconnectionfactory_unittest.cc
+    #talk/app/webrtc/peerconnection_unittest.cc
+    #talk/app/webrtc/peerconnectionfactory_unittest.cc
     talk/app/webrtc/peerconnectionfactoryimpl.cc
     talk/app/webrtc/peerconnectionfactoryimpl.h
     talk/app/webrtc/peerconnectionimpl.cc
     talk/app/webrtc/peerconnectionimpl.h
-    talk/app/webrtc/peerconnectionimpl_unittest.cc
+    #talk/app/webrtc/peerconnectionimpl_unittest.cc
     talk/app/webrtc/peerconnectionsignaling.cc
     talk/app/webrtc/peerconnectionsignaling.h
-    talk/app/webrtc/peerconnectionsignaling_unittest.cc
+    #talk/app/webrtc/peerconnectionsignaling_unittest.cc
     talk/app/webrtc/portallocatorfactory.cc
     talk/app/webrtc/portallocatorfactory.h
     talk/app/webrtc/roaperrorcodes.h
     talk/app/webrtc/roapmessages.cc
     talk/app/webrtc/roapmessages.h
-    talk/app/webrtc/roapmessages_unittest.cc
+    #talk/app/webrtc/roapmessages_unittest.cc
     talk/app/webrtc/roapsession.cc
     talk/app/webrtc/roapsession.h
-    talk/app/webrtc/roapsession_unittest.cc
+    #talk/app/webrtc/roapsession_unittest.cc
     talk/app/webrtc/sessiondescriptionprovider.h
     talk/app/webrtc/streamcollectionimpl.h
     talk/app/webrtc/videorendererimpl.cc
@@ -859,10 +859,10 @@ set (WEBRTC_SOURCES
     talk/app/webrtc/webrtcjson.h
     talk/app/webrtc/webrtcsdp.cc
     talk/app/webrtc/webrtcsdp.h
-    talk/app/webrtc/webrtcsdp_unittest.cc
+    #talk/app/webrtc/webrtcsdp_unittest.cc
     talk/app/webrtc/webrtcsession.cc
     talk/app/webrtc/webrtcsession.h
-    talk/app/webrtc/webrtcsession_unittest.cc
+    #talk/app/webrtc/webrtcsession_unittest.cc
     talk/app/webrtc/webrtcsessionobserver.h
     talk/app/webrtcv1/peerconnection.h
     talk/app/webrtcv1/peerconnectionfactory.cc
@@ -875,7 +875,7 @@ set (WEBRTC_SOURCES
     talk/app/webrtcv1/webrtcjson.h
     talk/app/webrtcv1/webrtcsession.cc
     talk/app/webrtcv1/webrtcsession.h
-    talk/app/webrtcv1/webrtcsession_unittest.cc
+    #talk/app/webrtcv1/webrtcsession_unittest.cc
 )
 
 set (POSIX_SOURCES
@@ -1118,7 +1118,8 @@ if (WIN32)
   target_link_libraries (call libexpatMT secur32 crypt32 ws2_32)
   target_link_libraries (call srtp iphlpapi strmiids winmm)
 else ()
-  target_link_libraries (call expat srtp ssl crypto z xml2 xslt)
+  message( "got here?" )
+  target_link_libraries (call srtp expat ssl crypto z xml2 xslt)
   if (APPLE)
     if (IOS)
     else ()
@@ -1127,9 +1128,9 @@ else ()
       target_link_framework (call Quartz )
       target_link_framework (call QuartzCore )
     endif ()
-    target_link_framework (call CoreAudio )
-    target_link_framework (call Foundation )
-  else ()
+      target_link_framework (call CoreAudio )
+      target_link_framework (call Foundation )
+    else () # not apple is Linux
     target_link_libraries (call dl pthread ${GTK2_LIBRARIES})
   endif ()
 endif ()
