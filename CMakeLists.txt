@@ -22,6 +22,7 @@ include_directories (
   ${VENDOR_INSTALL_PREFIX}/include
   ${VENDOR_INSTALL_PREFIX}/include/openssl
   ${VENDOR_INSTALL_PREFIX}/include/srtp
+  ${VENDOR_INSTALL_PREFIX}/../webrtc/src
 )
 
 link_directories (
@@ -441,19 +442,23 @@ set (PLUS_EXAMPLE_SOURCES
     talk/examples/plus/testutil/libjingleplus_test_notifier.h
     #talk/examples/plus/testutil/libjingleplus_unittest.cc
 )
-set (PEERCONNECTION_EXAMPLE_SOURCES
+set (PEERCONNECTION_EXAMPLE_SOURCES_CLIENT_LINUX
+    talk/examples/peerconnection/client/linux/main.cc
+    talk/examples/peerconnection/client/linux/main_wnd.cc
+    talk/examples/peerconnection/client/linux/main_wnd.h
+)
+set (PEERCONNECTION_EXAMPLE_SOURCES_CLIENT
     talk/examples/peerconnection/client/conductor.cc
     talk/examples/peerconnection/client/conductor.h
     talk/examples/peerconnection/client/defaults.cc
     talk/examples/peerconnection/client/defaults.h
-    talk/examples/peerconnection/client/linux/main.cc
-    talk/examples/peerconnection/client/linux/main_wnd.cc
-    talk/examples/peerconnection/client/linux/main_wnd.h
     talk/examples/peerconnection/client/main.cc
     talk/examples/peerconnection/client/main_wnd.cc
     talk/examples/peerconnection/client/main_wnd.h
     talk/examples/peerconnection/client/peer_connection_client.cc
     talk/examples/peerconnection/client/peer_connection_client.h
+)
+set (PEERCONNECTION_EXAMPLE_SOURCES_SERVER
     talk/examples/peerconnection/server/data_socket.cc
     talk/examples/peerconnection/server/data_socket.h
     talk/examples/peerconnection/server/main.cc
@@ -956,6 +961,7 @@ else ()
 endif ()
 add_definitions (-DJSONCPP_RELATIVE_PATH)
 add_definitions (-DLIBJINGLE_UNITTEST)
+add_definitions (-DWEBRTC_RELATIVE_PATH)
 
 #------------------------------------------------------------------------------
 # library: jingle 
@@ -1185,3 +1191,21 @@ endif ()
 install (TARGETS pcp DESTINATION bin/release CONFIGURATIONS Release RelWithDebInfo MinSizeRel)
 install (TARGETS pcp DESTINATION bin/debug CONFIGURATIONS Debug)
 endif ()
+
+#--------------------------------------------------------
+# example: peerconnection client
+#--------------------------------------------------------
+message (STATUS "Adding peerconnection_client" )
+if( NOT APPLE)
+  add_executable(peerconnection_client ${PEERCONNECTION_EXAMPLE_SOURCES_CLIENT})
+  #add_dependencies( peerconnection_client )
+endif()
+
+
+#--------------------------------------------------------
+# example: peerconnection server
+#--------------------------------------------------------
+message (STATUS "Adding peerconnection_server" )
+add_executable(peerconnection_server ${PEERCONNECTION_EXAMPLE_SOURCES_SERVER} )
+
+
